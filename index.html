@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- // 支持手机缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>vue</title>
+    <style>
+      img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Vue.js</h1>
+    <nav>
+      <ol>
+        <li><a href="#1">综述</a></li>
+        <li><a href="#2">历史</a></li>
+        <li><a href="#3">特性</a></li>
+        <li><a href="#4">过渡效果</a></li>
+        <li><a href="#5">核心插件</a></li>
+        <li><a href="#6">生命周期</a></li>
+      </ol>
+    </nav>
+  
+
+    <h2 id="1">综述</h2>
+    <p>
+      Vue.js是一款流行的JavaScript前端框架，旨在更好地组织与简化Web开发。Vue所关注的核心是MVC模式中的视图层，同时，它也能方便地获取数据更新，并通过组件内部特定的方法实现视图与模型的交互。
+    </p>
+    <h2 id="2">历史</h2>
+    <p>
+      在为AngularJS工作之后，Vue的作者尤雨溪开发出了这一框架。他声称自己的思路是提取Angular中为自己所喜欢的部分，构建出一款相当轻量的框架。Vue最早发布于2014年2月。作者在Hacker
+      News、Echo
+      JS与Reddit的/r/javascript版块发布了最早的版本。一天之内，Vue就登上这三个网站的首页。Vue是Github上最受欢迎的开源项目之一。同时，在JavaScript框架/函数库中，Vue所获得的星标数已超过React，并高于Backbone.js、Angular
+      2、jQuery等项目。
+    </p>
+    <h2 id="3">特性</h2>
+    <thead>
+      <th>名称</th>
+      <th>解释</th>
+    </thead>
+    <tbody>
+      <tr>
+        <th>组件</th>
+        <td>
+          组件是Vue最为强大的特性之一。为了更好地管理一个大型的应用程序，往往需要将应用切割为小而独立、具有复用性的组件。在Vue中，组件是基础HTML元素的拓展，可方便地自定义其数据与行为。下方的代码是Vue组件的一个示例，渲染为一个能计算鼠标点击次数的按钮。
+        </td>
+      </tr>
+      <tr>
+        <th>模板</th>
+        <td>
+          Vue使用基于HTML的模板语法，允许开发者将DOM元素与底层Vue实例中的数据相绑定。所有Vue的模板都是合法的HTML，所以能被遵循规范的浏览器和HTML解析器解析。在底层的实现上，Vue将模板编译成虚拟DOM渲染函数。结合响应式系统，在应用状态改变时，Vue能够智能地计算出重新渲染组件的最小代价并应用到DOM操作上。
+        </td>
+      </tr>
+      <tr>
+        <th>响应式设计</th>
+        <td>
+          响应式是指MVC模型中的视图随着模型变化而变化。在Vue中，开发者只需将视图与对应的模型进行绑定，Vue便能自动观测模型的变动，并重绘视图。这一特性使得Vue的状态管理变得相当简单直观。
+        </td>
+      </tr>
+      <tr>
+        <th>单文件组件</th>
+        <td>
+          为了更好地适应复杂的项目，Vue支持以.vue为扩展名的文件来定义一个完整组件，用以替代使用Vue.component注册组件的方式。开发者可以使用
+          Webpack或Browserify等构建工具来打包单文件组件。
+        </td>
+      </tr>
+    </tbody>
+    <h2 id="4">过度效果</h2>
+    <p>
+      Vue在插入、更新或者移除DOM时，提供多种不同方式的应用过渡效果。包括以下工具：
+    </p>
+    <ul>
+      <li>
+        在CSS过渡和动画中自动应用class
+        可以配合使用第三方CSS动画库，如Animate.css
+      </li>
+      <li>在过渡钩子函数中使用JavaScript直接操作DOM</li>
+      <li>可以配合使用第三方JavaScript动画库，如Velocity.js.</li>
+    </ul>
+    <h2 id="5">核心插件</h2>
+    <ul>
+      <li>vue-router</li>
+      <li>vuex</li>
+      <li>vue-loader</li>
+      <li>vueify </li>
+      <li>vue-cli</li>
+    </ul>
+    <h2 id="6">生命周期</h2>
+    <div>
+      <a href="/demo/image/生命周期.png" target="_blank">
+      <img src="/demo/image/生命周期.png" alt="vue生命周期" />
+    </a>
+    </div>
+  </body>
+</html>
